@@ -1,0 +1,5 @@
+rm *cxx mqf.py mqf_wrap.c
+rm -rf build
+swig -c++ -python mqf.i
+python setup.py build_ext --inplace
+#python mqf.py

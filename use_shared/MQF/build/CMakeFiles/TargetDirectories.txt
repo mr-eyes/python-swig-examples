@@ -1,0 +1,3 @@
+/home/mabuelanin/Desktop/SWIG/practice/use_shared/MQF/build/CMakeFiles/rebuild_cache.dir
+/home/mabuelanin/Desktop/SWIG/practice/use_shared/MQF/build/CMakeFiles/MQF.dir
+/home/mabuelanin/Desktop/SWIG/practice/use_shared/MQF/build/CMakeFiles/edit_cache.dir
