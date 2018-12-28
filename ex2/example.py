@@ -96,9 +96,13 @@ except __builtin__.Exception:
     _newclass = 0
 
 
-def fact(n):
-    return _example.fact(n)
+def fact(x):
+    return _example.fact(x)
 fact = _example.fact
+
+def tr_str(x):
+    return _example.tr_str(x)
+tr_str = _example.tr_str
 # This file is compatible with both classic and new-style classes.
 
 
