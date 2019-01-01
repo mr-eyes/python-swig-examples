@@ -151,152 +151,111 @@ class SwigPyIterator(object):
 # Register SwigPyIterator in _example:
 _example.SwigPyIterator_swigregister(SwigPyIterator)
 
-class IntVector(object):
+class vectorInt(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
 
     def iterator(self):
-        return _example.IntVector_iterator(self)
+        return _example.vectorInt_iterator(self)
     def __iter__(self):
         return self.iterator()
 
     def __nonzero__(self):
-        return _example.IntVector___nonzero__(self)
+        return _example.vectorInt___nonzero__(self)
 
     def __bool__(self):
-        return _example.IntVector___bool__(self)
+        return _example.vectorInt___bool__(self)
 
     def __len__(self):
-        return _example.IntVector___len__(self)
+        return _example.vectorInt___len__(self)
 
     def __getslice__(self, i, j):
-        return _example.IntVector___getslice__(self, i, j)
+        return _example.vectorInt___getslice__(self, i, j)
 
     def __setslice__(self, *args):
-        return _example.IntVector___setslice__(self, *args)
+        return _example.vectorInt___setslice__(self, *args)
 
     def __delslice__(self, i, j):
-        return _example.IntVector___delslice__(self, i, j)
+        return _example.vectorInt___delslice__(self, i, j)
 
     def __delitem__(self, *args):
-        return _example.IntVector___delitem__(self, *args)
+        return _example.vectorInt___delitem__(self, *args)
 
     def __getitem__(self, *args):
-        return _example.IntVector___getitem__(self, *args)
+        return _example.vectorInt___getitem__(self, *args)
 
     def __setitem__(self, *args):
-        return _example.IntVector___setitem__(self, *args)
+        return _example.vectorInt___setitem__(self, *args)
 
     def pop(self):
-        return _example.IntVector_pop(self)
+        return _example.vectorInt_pop(self)
 
     def append(self, x):
-        return _example.IntVector_append(self, x)
+        return _example.vectorInt_append(self, x)
 
     def empty(self):
-        return _example.IntVector_empty(self)
+        return _example.vectorInt_empty(self)
 
     def size(self):
-        return _example.IntVector_size(self)
+        return _example.vectorInt_size(self)
 
     def swap(self, v):
-        return _example.IntVector_swap(self, v)
+        return _example.vectorInt_swap(self, v)
 
     def begin(self):
-        return _example.IntVector_begin(self)
+        return _example.vectorInt_begin(self)
 
     def end(self):
-        return _example.IntVector_end(self)
+        return _example.vectorInt_end(self)
 
     def rbegin(self):
-        return _example.IntVector_rbegin(self)
+        return _example.vectorInt_rbegin(self)
 
     def rend(self):
-        return _example.IntVector_rend(self)
+        return _example.vectorInt_rend(self)
 
     def clear(self):
-        return _example.IntVector_clear(self)
+        return _example.vectorInt_clear(self)
 
     def get_allocator(self):
-        return _example.IntVector_get_allocator(self)
+        return _example.vectorInt_get_allocator(self)
 
     def pop_back(self):
-        return _example.IntVector_pop_back(self)
+        return _example.vectorInt_pop_back(self)
 
     def erase(self, *args):
-        return _example.IntVector_erase(self, *args)
+        return _example.vectorInt_erase(self, *args)
 
     def __init__(self, *args):
-        _example.IntVector_swiginit(self, _example.new_IntVector(*args))
+        _example.vectorInt_swiginit(self, _example.new_vectorInt(*args))
 
     def push_back(self, x):
-        return _example.IntVector_push_back(self, x)
+        return _example.vectorInt_push_back(self, x)
 
     def front(self):
-        return _example.IntVector_front(self)
+        return _example.vectorInt_front(self)
 
     def back(self):
-        return _example.IntVector_back(self)
+        return _example.vectorInt_back(self)
 
     def assign(self, n, x):
-        return _example.IntVector_assign(self, n, x)
+        return _example.vectorInt_assign(self, n, x)
 
     def resize(self, *args):
-        return _example.IntVector_resize(self, *args)
+        return _example.vectorInt_resize(self, *args)
 
     def insert(self, *args):
-        return _example.IntVector_insert(self, *args)
+        return _example.vectorInt_insert(self, *args)
 
     def reserve(self, n):
-        return _example.IntVector_reserve(self, n)
+        return _example.vectorInt_reserve(self, n)
 
     def capacity(self):
-        return _example.IntVector_capacity(self)
-    __swig_destroy__ = _example.delete_IntVector
+        return _example.vectorInt_capacity(self)
+    __swig_destroy__ = _example.delete_vectorInt
 
-# Register IntVector in _example:
-_example.IntVector_swigregister(IntVector)
-
-class kDataframe(object):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
-
-    def __init__(self, *args, **kwargs):
-        raise AttributeError("No constructor defined - class is abstract")
-    __repr__ = _swig_repr
-
-    def insert(self):
-        return _example.kDataframe_insert(self)
-
-    def get_it(self):
-        return _example.kDataframe_get_it(self)
-
-    def get_it_abs(self):
-        return _example.kDataframe_get_it_abs(self)
-    load = staticmethod(_example.kDataframe_load)
-    __swig_destroy__ = _example.delete_kDataframe
-
-# Register kDataframe in _example:
-_example.kDataframe_swigregister(kDataframe)
-
-def kDataframe_load():
-    return _example.kDataframe_load()
-
-class kDataframeMQF(kDataframe):
-    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
-    __repr__ = _swig_repr
-
-    def insert(self):
-        return _example.kDataframeMQF_insert(self)
-
-    def get_it(self):
-        return _example.kDataframeMQF_get_it(self)
-
-    def __init__(self):
-        _example.kDataframeMQF_swiginit(self, _example.new_kDataframeMQF())
-    __swig_destroy__ = _example.delete_kDataframeMQF
-
-# Register kDataframeMQF in _example:
-_example.kDataframeMQF_swigregister(kDataframeMQF)
+# Register vectorInt in _example:
+_example.vectorInt_swigregister(vectorInt)
 
 
 

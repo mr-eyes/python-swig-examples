@@ -1,7 +1,11 @@
 import example
 
-x = example.r_v()
+x = example.vectorInt()
+x.push_back(1)
+x.push_back(2)
+x.push_back(3)
 
-x.push_back(90)
+z = x.begin()
+while(z != x.end()):
+    print next(z)
 
-example.print_v(x)
