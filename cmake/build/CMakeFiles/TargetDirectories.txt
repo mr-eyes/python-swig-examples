@@ -1,2 +1,0 @@
-/home/mabuelanin/Desktop/SWIG/practice/cmake/build/CMakeFiles/rebuild_cache.dir
-/home/mabuelanin/Desktop/SWIG/practice/cmake/build/CMakeFiles/edit_cache.dir

@@ -3,13 +3,10 @@ setup.py file for SWIG example
 """
 
 from distutils.core import setup, Extension
-import os
-os.environ["CC"] = "g++"
 
 
 example_module = Extension('_example',
-                           sources=['example_wrap.cxx', 'example.cpp'],
-                           extra_compile_args=['-Wall', "-lgomp", '-Wextra', '-std=c++11']
+                           sources=['example_wrap.cxx']
                            )
 
 setup(name='example',
