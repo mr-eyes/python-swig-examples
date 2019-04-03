@@ -12,10 +12,11 @@ private:
    int x = 10;
 public:
     int y = 5;
-    callbackc(int);
-    ~callbackc();
+    callbackc(int n): x(n) {};
     void printrt() const;
     void operator ++();
+    callbackc operator =(const callbackc &c) const;
+    callbackc operator +(const callbackc &c) const;
     void next();
 };
 

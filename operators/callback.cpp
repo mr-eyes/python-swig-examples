@@ -30,15 +30,6 @@ void printtest()
 // }
 
 
-callbackc::callbackc(int n)
-{
-    x = n;
-}
-
-callbackc::~callbackc()
-{
-}
-
 void callbackc::printrt() const
 {
     std::cout << x << " ... y " << y << std::endl;
@@ -51,4 +42,14 @@ void callbackc:: operator ++()
 void callbackc::next() 
 {
     this->operator++();
+}
+callbackc callbackc::operator =(const callbackc &c) const
+{
+    return *this;
+}
+callbackc callbackc::operator +(const callbackc &c) const
+{
+    callbackc m_turn = callbackc(x + c.x);
+    m_turn.y += c.y;
+    return m_turn;
 }
