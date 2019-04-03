@@ -41,8 +41,6 @@
         handler = NULL;
     }
     void tr_str_wrapper(int a, Callback::fn f) {
-        printf("TEST");
-        Callback *ptr = 0;
         switch(f){
             case Callback::fn::ADD:
                 tr_str(a, Callback::add);
