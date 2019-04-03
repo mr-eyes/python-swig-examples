@@ -1,9 +1,11 @@
 #include <iostream>
 
-int callback(int);
+class Callback;
 
-void tr_str(int x, int (*fn)(int));
-int printtest();
+void tr_str(int x, Callback *obj);
+
+void printtest();
+
 class callbackc
 {
 private:
@@ -17,3 +19,11 @@ public:
     void next();
 };
 
+class Callback{
+    public:
+        virtual int run(int x){return 0;}
+        void callback(int x){
+            tr_str(x, this);
+            delete this;
+        }
+};

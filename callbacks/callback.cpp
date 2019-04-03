@@ -4,22 +4,22 @@ int callback(int x){
     return x * x;
 }
 
-void tr_str(uint64_t x, uint64_t fn(uint64_t)){
-    std::cout << fn(x) << std::endl;
+void tr_str(int x, Callback *obj){
+    std::cout << "tr_STR" << std::endl;
+    std::cout << obj->run(x) << std::endl;
 }
 
-void printtt()
+void printtest()
 {
     std::cout << "Hello World" << std::endl;
 }
-
 // int main()
 
 // {
 
 //     std::cout<<"\n\nHello World,\nWelcome to my first C ++ program on Ubuntu Linux\n\n"<<std::endl;
 
-//     tr_str(10 , [] (uint64_t x){
+//     tr_str(10 , [](int x){
 //         return x;
 //     });
 
